@@ -1,0 +1,22 @@
+<header class="app-header">
+  <div class="topbar">
+    <div class="inner">
+      <a class="logo" routerLink="/">
+        <img src="../../assets/logo.png" role="presentation" width="32" />
+      </a>
+      <div class="actions">
+        <a routerLink="/">Books</a>
+        <a routerLink="/cart">Cart</a>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <a class="logo" routerLink="/">
+        <img src="../../assets/logo.png" role="presentation" width="56" />
+      </a>
+      <mcy-search *ngIf="enableSearch$ | async"></mcy-search>
+      <mcy-cart-status></mcy-cart-status>
+    </div>
+  </div>
+</header>

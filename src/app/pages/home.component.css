@@ -1,0 +1,145 @@
+.main-content {
+  display: grid;
+  grid-template: auto 1fr / 265px 1fr;
+  grid-template-areas: 'sidebar header' 'sidebar content';
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  max-width: 80em;
+  margin: 20px auto 80px;
+  padding: 0 15px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-area: sidebar;
+}
+
+.sidebar .title {
+  margin-top: 0;
+  position: sticky;
+  top: 10px;
+}
+
+.header {
+  grid-area: header;
+  height: auto;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar .categories {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  padding-right: 15px;
+  white-space: nowrap;
+
+  position: sticky;
+  top: 50px;
+}
+
+.sidebar .categories .active {
+  font-weight: bold;
+}
+
+.actions-bar {
+  background-color: #f9e9e1;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sort-wrapper {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 182px);
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+.book-item:hover,
+.book-item:focus-within {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.book-item .book-image {
+  height: 180px;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgb(119, 119, 119);
+  transition: opacity 0.2s ease;
+}
+.book-item .book-image.lazy-load {
+  width: 115px;
+  box-shadow: none;
+  opacity: 0.2;
+}
+
+.book-item .book-title {
+  padding: 0 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 180px;
+}
+
+.book-item .book-price {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.book-item .book-actions {
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 0 10px;
+    max-width: none;
+    grid-template-areas: 'header header' 'content content';
+  }
+
+  .actions-bar {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-column-gap: 10px;
+  }
+}

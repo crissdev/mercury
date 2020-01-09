@@ -1,0 +1,30 @@
+.rating {
+  width: 65px;
+  height: 11px;
+  background-image: url(../../assets/book-rating.png);
+  background-repeat: no-repeat;
+}
+
+.rating.r5 {
+  background-position: -1px -61px;
+}
+
+.rating.r4 {
+  background-position: -1px -49px;
+}
+
+.rating.r3 {
+  background-position: -1px -37px;
+}
+
+.rating.r2 {
+  background-position: -1px -25px;
+}
+
+.rating.r1 {
+  background-position: -1px -13px;
+}
+
+.rating.r0 {
+  background-position: -1px -0px;
+}

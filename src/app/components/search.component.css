@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+}
+
+.search-hint {
+  display: none;
+}
+
+input:focus ~ .search-hint {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  color: var(--text-muted);
+  left: 40px;
+  top: 38px;
+}
+
+input {
+  padding: 0.5rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: solid 1px #eaccbd;
+  background-color: #fff7ef;
+  transition: border-color, background-color 0.4s ease-in-out;
+  width: 100%;
+  padding-left: 40px;
+}
+
+input:focus {
+  border-color: #f8d0bc;
+  background-color: #fcf9f6;
+}
+
+.addon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cc4f0e;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}

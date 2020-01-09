@@ -1,0 +1,49 @@
+/* Main layout */
+.app {
+  --app-grid-columns: 1fr minmax(min-content, 60em) 1fr;
+  --primary: #cc4f0e;
+
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-columns: var(--app-grid-columns);
+  grid-template-areas: 'header header header' 'content content content' 'footer footer footer';
+  min-height: 100vh;
+}
+
+mcy-main-header {
+  grid-area: header;
+}
+
+.app-content {
+  grid-area: content;
+}
+
+.app-footer {
+  grid-area: footer;
+}
+
+mcy-search {
+  grid-column: 2/3;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #575757;
+  color: #fff;
+  padding: 0.5rem 15px;
+  margin-top: auto;
+
+  display: grid;
+  grid-template-columns: var(--app-grid-columns);
+}
+
+.app-footer .content {
+  grid-column: 2/3;
+}
+
+@media (max-width: 1024px) {
+  .app-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

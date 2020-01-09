@@ -1,0 +1,24 @@
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #cc4f0e;
+  background-color: #cc4f0e;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #fff7ef;
+  cursor: pointer;
+
+  transition: border, background-color 0.2s ease-in-out;
+}
+
+.cart-button:hover,
+.cart-button:focus {
+  border: 2px solid #a94612;
+  background-color: #e78755;
+}
+
+.cart-button svg {
+  margin-left: 10px;
+}

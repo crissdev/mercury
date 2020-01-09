@@ -1,0 +1,35 @@
+.cart-status {
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  grid-column-gap: 10px;
+  max-width: 300px;
+}
+
+.cart-status .message {
+  grid-column: 1/2;
+
+  display: block;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 250px;
+}
+
+.cart-status a {
+  --icon-size: 40px;
+  background-color: var(--link-color);
+  flex: 0 0 var(--icon-size);
+  height: var(--icon-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+.cart-status a:hover,
+.cart-status a:focus,
+.cart-status a:active {
+  background-color: var(--link-hover-color);
+}
