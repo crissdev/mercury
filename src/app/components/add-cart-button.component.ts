@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-import { Book } from '../books.service';
+import { Book } from '../services/books.service';
 import { CartService } from '../services/cart.service';
 
 @Component({

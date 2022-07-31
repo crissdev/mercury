@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { CartService, CartItem } from '../services/cart.service';
 import { Observable } from 'rxjs';
-import { Book } from '../books.service';
+import { Book } from '../services/books.service';
 
 @Component({
   selector: 'mcy-cart',

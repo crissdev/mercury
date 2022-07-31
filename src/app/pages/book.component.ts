@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, View
 import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { Book, BooksService } from '../books.service';
+import { Book, BooksService } from '../services/books.service';
 
 @Component({
   templateUrl: './book.component.html',

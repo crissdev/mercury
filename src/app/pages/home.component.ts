@@ -11,7 +11,7 @@ import { FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BehaviorSubject, fromEvent, Observable, of, Subscription } from 'rxjs';
 import { debounceTime, distinctUntilChanged, map, startWith, switchMap } from 'rxjs/operators';
-import { Book, BooksService, CategorySummary } from '../books.service';
+import { Book, BooksService, CategorySummary } from '../services/books.service';
 import { createEqualityComparer } from '../utils';
 
 @Component({

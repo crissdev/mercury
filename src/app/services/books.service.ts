@@ -3,8 +3,8 @@ import { Injectable } from '@angular/core';
 import { forkJoin, Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { environment } from '@environment';
-import { DbBook, DbCategory } from './db-in-memory.service';
-import { createEqualityComparer } from './utils';
+import { DbBook, DbCategory } from '../db-in-memory.service';
+import { createEqualityComparer } from '../utils';
 
 export interface Category {
   id: number;

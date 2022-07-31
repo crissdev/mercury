@@ -1,7 +1,7 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Book } from '../books.service';
+import { Book } from './books.service';
 
 export interface CartItem {
   book: Book;
