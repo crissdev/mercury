@@ -22,7 +22,6 @@
     "@angular/router": "~8.2.14",
     "@sindresorhus/slugify": "^0.9.1",
     "angular-in-memory-web-api": "^0.8.0",
-    "got": "^10.2.1",
     "normalize.css": "8.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.9.0",
